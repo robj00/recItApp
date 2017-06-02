@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <html lang="en">
+  <meta charset="utf-8" name="description" content="Recommend It! app recommends entertainment options based on your tastes">
+  <title>Recommend It</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class='container'>
+  <h1>Recommend It!</h1>
+  <h2>Enter what you like and we'll recommend entertainment that may interest you</h2>
+  <form>
+  	Search For:<br>
+    <select>
+    <option value='All'>All</option>
+    <option value='Music'>Music</option>
+    <option value='Movies'>Movies</option>
+    <option value='Shows'>Shows</option>
+    <option value='Books'>Books</option>
+    <option value='Author'>Authors</option>
+    <option value='Games'>Games</option>
+    <option value='Music'>Music</option>
+  </select>
+  	<input type="text" name="searchText" placeholder="What I like: enter music, artist, movie, show, book, author, game">
+  	<input type="submit" value="Submit">
+  </form>
+  
+  </div>
+  <div hidden class='searchresults'>
+  	<h2 >Results:</h2><br>
+  	<div class=results>
+  	<div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src='app.js'></script>
+</body>
+</html>

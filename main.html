@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <html lang="en">
+  <meta charset="utf-8" name="description" content="Recommend It! app recommends entertainment options based on your tastes">
+  <title>Recommend It</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class='searchcontainer'>
+  <h1>Recommend It!</h1>
+  <h2>Enter what you like and we'll recommend entertainment that may interest you</h2>
+  <form>
+  	Search For:<br>
+    <select>
+      <option value='all'>All</option>
+      <option value='music'>Music</option>
+      <option value='movies'>Movies</option>
+      <option value='shows'>Shows</option>
+      <option value='books'>Books</option>
+      <option value='authors'>Authors</option>
+      <option value='games'>Games</option>
+    </select>
+  	<input class = 'inputbox' type="text" name="searchText" placeholder="What I like: enter music, artist, movie, show, book, author, game">
+  	<input type="submit" value="Submit">
+  </form>
+  
+  </div>
+  <div class='displaycontainer'>
+    <div hidden class='searchresults'>
+    	<h2 >Results</h2><br>
+      <div class= 'itemline'>
+        <div class='results'>
+        </div>  	
+        <div class='snippet'>
+      	</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src='app.js'></script>
+</body>
+</html>

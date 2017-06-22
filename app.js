@@ -15,9 +15,10 @@ function queryAPITasty (searchText, searchType, callback) {
 		type: searchType,
 		info: '1',
 		limit: '20',
-		k: '271516-Recommen-DHVL11EC'
+		k: '271516-Recommen-DHVL11EC',
+		callback: '?'
 	};
-	$.getJSONP('//www.tastekid.com/ask/ws', params, callback);
+	$.getJSON('//www.tastekid.com/ask/ws', params, callback);
 
 }
 
